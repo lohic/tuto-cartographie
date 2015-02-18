@@ -23,12 +23,14 @@ Vous pouvez générer les différentes **tuiles** avec un script dans le termina
 
 Néanmoins cette méthode peut être assez technique. Vous pouvez également utiliser un programme comme [MapTiler](http://www.maptiler.org). Celui ci s'occupe de générer toutes les vignettes de votre carte, ainsi que le fichier html nécessaire à l'utilisation de leafletJS. Attention, dans sa version gratuite, le programme ne permet pas de gérer des images dont les dimensions sont supérieures à 10240 pixels. Les *tuile* auront également un watermark "maptiler" inscrit dessus.
 
+Il est également possible de coder son propre système de génération de tuiles avec Processing par exemple.
+
 
 ### Placer un marqueur avec des coordonnées en pixels ###
 
 Même avec une carte en pixels le système de coordonnées adopté est basé sur les coordonnées GPS d'OpenStreetMap. Ceci, notamment pour prévenir les problèmes de positionnement lié aux changements d'échelle.
 
-Pour pouvoir positionner l'abcisse et l'ordonnée d'un point en pixels, il faut utiliser la fonction suivante :
+Pour pouvoir positionner l'abscisse et l'ordonnée d'un point en pixels, il faut utiliser la fonction suivante :
 
 ```js
 map.unproject(
@@ -49,3 +51,7 @@ var marker = L.marker(
 ).addTo(map);
 ```
 
+- http://wiki.openstreetmap.org/wiki/Zoom_levels
+- http://scratch.mit.edu/studios/837016/
+- http://rennescraft.fr
+- http://92.222.144.143:8123/#
